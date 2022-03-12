@@ -25,3 +25,5 @@ glow 8s linear infinite;
     background-position-x: 300%;
     background-position-y: center;
 }
+
+padding for every section is p-8

@@ -28,8 +28,8 @@ export default function HeroSection (){
         <BackgroundImg />
         <div className=" pb-16">
         <section className=" z-5 text-white p-8 text-center">
-        <h1 className='text-3xl leading-7 pb-6'>BRING THE GAME</h1>
-        <p className='font-extralight text-lg leading-8 '>Galaxy Guild serves as the platform for Players, Guilds, and Scholarship Managers to collaborate and make the most out of their Metaverse experience! </p>
+        <h1 className='text-3xl leading-7 pb-6 font-header'>BRING THE GAME</h1>
+        <p className='font-extralight text-lg leading-8 font-paraTwo'>Galaxy Guild serves as the platform for Players, Guilds, and Scholarship Managers to collaborate and make the most out of their Metaverse experience! </p>
         </section>
 
         <div className="grid place-content-center">

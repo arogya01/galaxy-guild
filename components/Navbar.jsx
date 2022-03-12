@@ -2,7 +2,6 @@ import Image from "next/image";
 import { useState } from "react";
 import Logo from "../public/Logo.webp";
 
-
 const HamIcon = () => {
   return (
     <svg
@@ -28,40 +27,34 @@ const HamIcon = () => {
   );
 };
 
-
-
 export default function Navbar() {
-    const [isNavOpen,setNavOpen] = useState(false);
+  const [isNavOpen, setNavOpen] = useState(false);
 
-    const handleOnClick = () => {
-        setNavOpen(true);
-    }
+  const handleOnClick = () => {
+    setNavOpen(true);
+  };
   return (
-      <>
-    <nav className="bg-dk-bluish h-16 flex flex-row items-center px-4  justify-between">
-      <Image src={Logo} width={180} height={28} alt="logo" />
-      <button className="cursor-pointer" onClick={handleOnClick}>
-      <HamIcon />
+    <>
+      <nav className="bg-dk-bluish h-16 flex flex-row items-center px-4  justify-between">
+        <Image src={Logo} width={180} height={28} alt="logo" />
+        <button className="cursor-pointer" onClick={handleOnClick}>
+          <HamIcon />
+        </button>
+      </nav>
 
-      </button>
-
-    </nav>
-
-    {
-      isNavOpen ? (
-<div className="z-10 fixed w-80 h-screen flex bg-white justify-start pl-8
-        pt-5 right-0 top-0">
+      {isNavOpen ? (
+        <div
+          className="z-10 fixed w-80 h-screen flex bg-white justify-start pl-8
+        pt-5 right-0 top-0"
+        >
           <ul>
-              <li className="pb-2 cursor-pointer ">Home</li>
-              <li className="pb-2 cursor-pointer ">About</li>
-              <li className="pb-2 cursor-pointer ">Vision</li>
-              <li className="pb-2 cursor-pointer ">News</li>
+            <li className="pb-2 cursor-pointer ">Home</li>
+            <li className="pb-2 cursor-pointer ">About</li>
+            <li className="pb-2 cursor-pointer ">Vision</li>
+            <li className="pb-2 cursor-pointer ">News</li>
           </ul>
-      </div>
-
-      ) : null
-    }
-      
+        </div>
+      ) : null}
     </>
   );
 }

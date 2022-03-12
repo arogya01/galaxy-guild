@@ -2,24 +2,41 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-    "./utility/**/*.{js,ts,jsx,tsx}",
+    "./utils/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      fontFamily:{
+        "header":"Locust",
+        "para":"DM Sans, sans-serif",
+        "paraTwo":"Jost sans-serif"
+      },
       colors: {
         "dk-bluish": "#010929",
-        "btn-blue": "hsl(181 ,100% ,44%)",
-        "btn-purple": " hsl(299 ,100% ,50%)",
+        "btn-blue": "#00DDE0",
+        "btn-purple": "#FB00FF",
+        "card-white":"#ffffff40",
+        "card-gray":"#3f3e3ed9",
+        "card-hover":"#2e2e4d",
+        "card-logo":"#40228c",
+        "vision":"#000626"
       },
       animation: {
         glow: "glow 8s linear infinite",
       },
-      keyFrames: {
+      keyframes: {
         glow: {
           "100%": { backgroundPosition: "300%" },
         },
       },
+      backgroundSize:{
+        '300':"300%"
+      },
+      boxShadow:{
+        'card': '0 0 10px 0 rgb(245 245 245 / 36%)'
+      }
+      
+      }
     },
-  },
   plugins: [],
 };

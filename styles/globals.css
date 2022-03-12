@@ -6,18 +6,16 @@
 
 @font-face{
   font-family:"Locust";
-  src:url("/Locust.woff2");
+  src:url("/fonts/Locust.woff2");
   font-style:normal;
   font-weight:300;
 }
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap');
 
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Jost', sans-serif;
 }
 
 a {

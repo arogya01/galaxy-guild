@@ -22,10 +22,10 @@ const BackgroundImg = () => {
 
 export default function HeroSection() {
   return (
-    <div className="relative z-5 h-[80rem] sm:h-[60rem]  lg:h-[48rem]">
+    <div className="relative z-5 h-[90rem] sm:h-[60rem]  lg:h-[48rem]">
       <BackgroundImg />
       <div className=" pb-16 ">
-        <section className=" z-5 text-white p-8 text-center flex flex-col items-center">
+        <section className=" z-5 text-white p-12 text-center flex flex-col items-center">
           <h1 className="text-3xl leading-7 pb-6 font-header">
             BRING THE GAME
           </h1>

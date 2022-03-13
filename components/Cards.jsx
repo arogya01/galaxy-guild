@@ -9,7 +9,7 @@ export default function Card({header,content,logo}){
 
             </div>
             <h2 className="font-bold text-white pb-4 text-2xl ">{header}</h2>
-            <p className="text-white ">{content}</p>
+            <p className="text-white text-center">{content}</p>
         </div>
         </>
     )

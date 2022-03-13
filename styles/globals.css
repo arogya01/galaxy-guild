@@ -6,7 +6,7 @@
 
 @font-face{
   font-family:"Locust";
-  src:url("/fonts/Locust.woff2");
+  src:url("/fonts/Locust.ttf");
   font-style:normal;
   font-weight:300;
 }
@@ -16,6 +16,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+  color:white;
+  
 }
 
 a {

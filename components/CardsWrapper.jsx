@@ -18,7 +18,7 @@ const cardsInfo = [
 
 export default function CardsWrapper() {
   return (
-    <div className="grid place-content-center ">
+    <div className="grid place-content-center sm:grid-cols-3">
      {
        cardsInfo.map( el => {
          return(<>

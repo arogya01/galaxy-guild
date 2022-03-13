@@ -27,3 +27,16 @@ glow 8s linear infinite;
 }
 
 padding for every section is p-8
+
+
+dimensions for this vision image thingy. right. 
+
+-> for mobile 
+
+rocket: 193px , 183px 
+moving boy: 233 , 403 
+
+-> for  
+moving boy: 318 , 550
+388, 368 
+ 

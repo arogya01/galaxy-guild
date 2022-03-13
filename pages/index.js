@@ -4,7 +4,6 @@ import CardsWrapper from '../components/CardsWrapper'
 import HeroSection from '../components/HeroSection'
 import Navbar from '../components/Navbar'
 import Vision from '../components/Vision'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (

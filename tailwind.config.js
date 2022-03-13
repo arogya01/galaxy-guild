@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        "header":"Locust",
-        "para":"DM Sans, sans-serif",
-        "paraTwo":"Jost sans-serif"
+        "header":"Locust,sans-serif",
+        "fontDM":"DM Sans, sans-serif",
+        "fontJost":"Jost, sans-serif"
       },
       colors: {
         "dk-bluish": "#010929",

@@ -1,6 +1,11 @@
 import Image from "next/image";
 import { useState } from "react";
+import { useEffect } from "react/cjs/react.production.min";
 import Logo from "../public/Logo.webp";
+import GlowingBtn from "../utils/glowingBtn";
+import twitIcon from '../public/social/Twitter.webp';
+import linkIcon from '../public/social/linkedin.webp';
+import teleIcon from '../public/social/Telegram.webp';
 
 const HamIcon = () => {
   return (
@@ -29,23 +34,53 @@ const HamIcon = () => {
 
 export default function Navbar() {
   const [isNavOpen, setNavOpen] = useState(false);
+  const [getDimensions,setDimensions] = useState("");
+  
+  // useEffect(()=>{
+  //   function getDimensions(){
+
+  //   }
+
+
+  // })
 
   const handleOnClick = () => {
     setNavOpen(true);
   };
   return (
     <>
-      <nav className="bg-dk-bluish h-16 flex flex-row items-center px-4  justify-between">
+      <nav className="bg-dk-bluish h-20 flex flex-row items-center px-8 justify-between ">
+
+        <div className="lg:flex lg:flex-row lg:justify-between">
         <Image src={Logo} width={180} height={28} alt="logo" />
-        <button className="cursor-pointer" onClick={handleOnClick}>
+
+        <ul className="hidden font-header lg:flex lg:flex-row lg:px-8 ">
+        <li className="pl-2 cursor-pointer ">Home</li>
+            <li className="pl-2 cursor-pointer ">About</li>
+       
+            <li className="pl-2 cursor-pointer ">Vision</li>
+            <li className="pl-2 cursor-pointer ">News</li>
+        </ul>
+        </div>
+        <button className="lg:hidden cursor-pointer" onClick={handleOnClick}>
           <HamIcon />
         </button>
+        
+        <div className="hidden lg:flex lg:flex-row lg:justify-between">
+          <span className="flex flex-row items-center pr-12">
+          <Image src={twitIcon} width={42} height={42} alt="twitter" />
+          <Image src={linkIcon} width={42} height={42} alt="twitter" />
+          <Image src={teleIcon} width={42} height={42} alt="twitter" />
+          </span>
+
+          <GlowingBtn btnName="Launch App" />
+        </div>
       </nav>
 
       {isNavOpen ? (
         <div
           className="z-10 fixed w-80 h-screen flex bg-white justify-start pl-8
-        pt-5 right-0 top-0"
+        pt-5 right-0 top-0 text-black"
         >
           <ul>
             <li className="pb-2 cursor-pointer ">Home</li>

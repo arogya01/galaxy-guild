@@ -4,7 +4,7 @@ import Rocket from "../public/vision/rocket.webp";
 
 export default function Vision() {
   return (
-    <div className="bg-vision px-8 py-12 h-[62rem] lg:h-[60rem] relative font-fontDM">
+    <div className="bg-vision px-8 py-12 h-[62rem] lg:h-[60rem] lg:py-6 relative font-fontDM">
       <div className="rocket">
         <Image src={Rocket} alt="rocket" width={388} height={360} />
         <style jsx>

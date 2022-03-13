@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function GamesCard({ gameName, imgSrc }) {
   return (
     <div className="relative w-full h-[10rem] rounded-lg m-8">
-      <div className="imgWrapper w-full h-[180px] lg:w-3/4 mr-4 rounded-lg">
+      <div className="imgWrapper w-full h-[180px] lg:w-3/4 mr-4 rounded-lg cursor-pointer hover:opacity-70">
         <Image src={imgSrc} alt="gameImg" layout="fill" objectFit="cover" />
         <style jsx>
           {`
